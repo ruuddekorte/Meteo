@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+<h1>Hello Myself</h1>
+
+
+<div id="meteodiv"></div>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script>
+        $("#meteodiv")
+            .html('<object data="http://api.openweathermap.org/data/2.5/weather?id=2983153&APPID=6b0093ca3ed371f163ae90b3957b8b98&mode=html"/>');
+</script>
+</body>
+</html>
+
+
+<!-- 
+http://api.openweathermap.org/data/2.5/weather?id=2983153&APPID=6b0093ca3ed371f163ae90b3957b8b98&mode=html
+
+
+http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=6b0093ca3ed371f163ae90b3957b8b98
+-->

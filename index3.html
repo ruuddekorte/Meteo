@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--<link rel="stylesheet" href="dist/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<title>METEO SIMPLON.CO</title>
+</head>
+<body>
+	<div id="bandeau">Ceci est le bandeau</div>
+	<div id="menu">
+		<div id="menu_haut">Menu haut</div>
+		<div id="menu_bas">Menu bas</div>
+	</div>
+	<div id="contenu" class="wrapper">
+
+		<div id="bloc_news">Weather
+			<div id="meteodiv"></div>
+		</div>
+    
+    <h1>Météo en France</h1>
+	    <div class="rechercher">
+                <input type="text" id="ville" placeholder="Entrez le nom d'une ville française"> <button id="selec" onclick="this.blur();">Rechercher</button>
+                <p></p>
+  			<div class="options">     
+                <ul class="liste">
+                        <li data-vicopo="#ville">
+                          <span data-vicopo-ville></span>
+                        </li>
+                </ul>
+            </div>
+        </div>
+		<div id="meteocard" style="card">
+			<p><span class="meteoVille">Rodez</span></p><hr />
+			<ul>
+				<li>GPS : <span class="meteoLon">0</span> lon, <span class="meteoLat">0</span> lat</li>
+				<li>Vitesse vent :  <span class="meteoVent">0</span>  ms</li>
+				<li>Humidtée :  <span class="meteoHumiditee">0</span>  %</li>
+				<li>Pression :  <span class="meteoPression">0</span>  hpa</li>
+				<li>Temperature :  <span class="meteoTempActu">0</span> °C</li>
+				<li>min temp :  <span class="meteoTempMin">0</span>  °C</li>
+				<li>max temp :  <span class="meteoTempMax">0</span>  °C</li>
+			</ul>
+			<hr /> <span class=meteoIcon></span>
+    	</div>		
+	</div>
+	<div id="pied_page">Ceci est le pied de page</div>
+
+
+<!--<script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/app.min.js"></script> 			-->
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="js/app3.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://vicopo.selfbuild.fr/api.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+	font-family: 'Arial', sans-serif;
+	font-size: 18px;
+}
+p{ 
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: left;
+	}
+h1, h2, button, input{
+	margin-left: 12px;
+}
+.options{
+	float: right;
+    height: 300px;
+    width: 200px;
+    overflow:hidden;
+	z-index: 5;
+}
+div#meteocard {
+    display: block;
+    display: inline-block;
+	width:160px;
+	height:170px;
+	background-color:#e6ffff;
+	padding: 20px;
+	text-align: center; 
+	overflow:hidden;
+	font-size: 1em;
+	margin-left: 40px;
+	}
+div#meteocard p, li, ul {
+	font-size: 11px;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+div#meteocard ul {
+	list-style: none;
+}
+hr {
+	display: block;
+	clear: both;
+	height: 5px;
+	color: #123455;
+	background-color: #123455;
+}
+div#bandeau {
+	width:800px;
+	height:50px;
+	background-color:#00CCFF;
+	}
+div#menu {
+	float:left;
+	width:100px;
+	height:400px;
+	background-color:#FF6699;
+	}
+div#menu_haut {
+	width:100px;
+	height:200px;
+	background-color:#66CC33;
+	}
+div#menu_bas {
+	width:100px;
+	height:300px;
+	background-color:#CC99CC;
+	}
+div#contenu {
+	float:left;
+	width:700px;
+	height:500px;
+	background-color:#FFCC00;
+	}
+div#bloc_news {
+	float:right;
+	width:150px;
+	height:200px;
+	background-color:#e6ffff;
+	padding: 10px;
+	text-align: center; 
+	 overflow:hidden;
+	 margin-left: 10px;
+	}
+div#pied_page {
+	clear:both;
+	width:800px;
+	height:50px;
+	background-color:#33FF99;
+	}
